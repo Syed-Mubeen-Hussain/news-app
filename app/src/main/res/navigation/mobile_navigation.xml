@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.newsapp.ui.samaa.HomeFragment"
+        android:label="@string/samaa"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_nav_home_to_nav_gallery"
+            app:destination="@id/nav_gallery" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_gallery"
+        android:name="com.example.newsapp.ui.ary.GalleryFragment"
+        android:label="@string/ary"
+        tools:layout="@layout/fragment_gallery" />
+
+    <fragment
+        android:id="@+id/nav_slideshow"
+        android:name="com.example.newsapp.ui.duniya.SlideshowFragment"
+        android:label="@string/duniya"
+        tools:layout="@layout/fragment_slideshow" />
+    <fragment
+        android:id="@+id/abbtakkFragment"
+        android:name="com.example.newsapp.AbbTakKFragment"
+        android:label="@string/abbtakk"
+        tools:layout="@layout/fragment_abbtakk" />
+    <fragment
+        android:id="@+id/geoFragment"
+        android:name="com.example.newsapp.GeoFragment"
+        android:label="@string/geo"
+        tools:layout="@layout/fragment_geo" />
+    <fragment
+        android:id="@+id/privacyPolicyFragment"
+        android:name="com.example.newsapp.PrivacyPolicyFragment"
+        android:label="@string/privacy_policy"
+        tools:layout="@layout/fragment_privacy_policy" />
+</navigation>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/s_letter"
+            android:menuCategory="secondary"
+            android:title="@string/samaa" />
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@drawable/letter_a"
+            android:menuCategory="secondary"
+            android:title="@string/ary" />
+        <item
+            android:id="@+id/nav_slideshow"
+            android:icon="@drawable/d_letter"
+            android:menuCategory="secondary"
+            android:title="@string/duniya" />
+        <item
+            android:id="@+id/abbtakkFragment"
+            android:icon="@drawable/letter_a"
+            android:menuCategory="secondary"
+            android:title="@string/abbtakk" />
+        <item
+            android:id="@+id/geoFragment"
+            android:icon="@drawable/letter_g"
+            android:menuCategory="secondary"
+            android:title="@string/geo" />
+    </group>
+
+    <item
+        android:menuCategory="secondary"
+        android:title="UpComing">
+        <menu>
+            <item
+                android:id="@+id/ny"
+                android:icon="@drawable/upcoming"
+                android:menuCategory="secondary"
+                android:title="UpComing Channel" />
+            <item
+                android:id="@+id/privacyPolicyFragment"
+                android:icon="@drawable/letter_p"
+                android:menuCategory="secondary"
+                android:title="@string/privacy_policy" />
+        </menu>
+    </item>
+
+</menu>
